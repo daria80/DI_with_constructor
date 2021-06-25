@@ -1,10 +1,15 @@
 package spring_introduction_4;
 
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 public class Test {
 
     public static void main(String[] args) {
-        Jar jar = new Cola();
-        Mama mama = new Mama(jar);
+
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext4.xml");
+
+        Mama mama = context.getBean("Mama",Mama.class);
+
         mama.pourDrink();
     }
 }
