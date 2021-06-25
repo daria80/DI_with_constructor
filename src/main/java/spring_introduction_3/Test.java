@@ -14,5 +14,7 @@ public class Test {
 //        Library library = new Library(book);
 //
         library.giveNeedBook();
+
+        context.close();
     }
 }

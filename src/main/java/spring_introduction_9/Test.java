@@ -13,5 +13,7 @@ public class Test {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext9.xml");
         Translator translator1 = context.getBean("translator",Translator.class);
         translator1.translate();
+
+        context.close();
     }
 }

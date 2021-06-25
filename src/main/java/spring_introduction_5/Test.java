@@ -11,5 +11,7 @@ public class Test {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext5.xml");
         Hospital hospital = context.getBean("hospital", Hospital.class);
         hospital.giveBirth();
+
+        context.close();
     }
 }

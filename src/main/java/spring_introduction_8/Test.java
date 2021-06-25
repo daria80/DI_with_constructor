@@ -13,5 +13,7 @@ public class Test {
         GardenBed gardenBed = new GardenBed(vegetable);
         gardenBed.sowedInTheGarden();
 
+        context.close();
+
     }
 }

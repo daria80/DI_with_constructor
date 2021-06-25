@@ -12,6 +12,8 @@ public class Test {
         Application application = context.getBean("application", Application.class);
 
         application.sendMessage();
+
+        context.close();
     }
 
 }
